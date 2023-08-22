@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: .1s;
+    transition: 0.5s;
   
 }
 body{
@@ -116,10 +116,13 @@ body{
 
 }
 @media screen and (max-width:800px){
+    body{
+        height: 950px;
+    }
     .card{
         flex-direction: column;
         width: 370px;
-        height: 620px;
+        height: 630px;
     }
     .imag-2{
         width: 300px;
