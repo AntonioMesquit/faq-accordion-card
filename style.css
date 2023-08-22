@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*font-family: 'Kumbh Sans', sans-serif;*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .1s;
+  
+}
+body{
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+    
+}
+.card{
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.arrow{
+    width: 10px;
+}
+.part1,.part2{
+    width: 50%;
+}
+.card{
+    display: flex;
+}
+.images{
+    position: relative;
+}
+.ima1{
+    position: absolute;
+    top: 200px;
+    left: -98px;
+    z-index: 4;
+
+}
+.ima2{
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: -48px;
+}
+.imag-3{
+    width: 500px;
+    
+}
+.ima3{
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    left: -50px;
+    width: 100%;
+}
+.part2{
+    padding: 50px;
+}
+.part1{
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -360px -140px;
+    background-size: 750px;
+}
+.box1 h3{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.title:hover{
+    color: #F47C57;
+}
+.box1 p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.part2 h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.box1{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.248);
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 90%;
+}
+.box1 p{
+    overflow: hidden;
+    height: 0px;
+    overflow-y: auto;
+}
+.box1.active p{
+    height: 60px;
+}
+.box1.active .title h3{
+    color: black;
+    font-weight: 600;
+}
+.box1.active .arrow{
+    transform: rotate(180deg);
+
+}
+@media screen and (max-width:800px){
+    .card{
+        flex-direction: column;
+        width: 370px;
+        height: 620px;
+    }
+    .imag-2{
+        width: 300px;
+    }
+    .ima2{
+        top: -137px;
+        left: 35px;
+    }
+    .ima1{
+        top: -60px;
+        left: 20px;
+    }
+    .imag-1{
+        width: 120px;
+    }
+    .part2{
+        width: 100%;
+    }
+    .part2{
+        padding-top: 200px;
+        background-size: 300px;
+        background-image: url(images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 35px -10px;
+        
+    }
+    .part2 h1{
+        text-align: center;
+    }
+    .cards{
+        justify-content: center;
+    }
+    .box1{
+        width: 270px;
+    }
+}
