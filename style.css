@@ -106,6 +106,7 @@ body{
 }
 .box1.active p{
     height: 60px;
+    overflow: hidden;
 }
 .box1.active .title h3{
     color: black;
